@@ -7,7 +7,6 @@ const AddAlbum = (props) => {
   const [userId, setUserId] = useState("");
   const [title, setTitle] = useState("");
 
-  // This function gets the user input (userId and title) and calls the addAlbumToList function to add the album to the list
   const getAlbumFormData = async () => {
     try {
       await props.addAlbumToList(Number(userId), title);
